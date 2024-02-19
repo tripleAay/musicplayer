@@ -1,0 +1,674 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: metropolis,sans-serif;
+}
+
+.container{
+    background-color: black;
+    /* padding: 20px; */
+    width: 100%;
+    height: 650px;
+    padding: 5px;
+    display: flex;
+    position: relative;
+}
+.container1{
+    background-color: black;
+    /* padding: 20px; */
+    width: 100%;
+    height: 550px;
+    margin: 0;
+    display: flex;
+
+}
+.footer{
+    margin-top: 565px;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    width: 100%;
+    height: 70px;
+    margin-bottom: 100px;
+    z-index: 1;
+    position: absolute;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 0 20px;
+
+}
+.aa{
+    display: block;
+    width: 280px;
+    height: 550px;
+    /* background-color: palegoldenrod; */
+    padding: 8px;
+    position: relative;
+    align-content: center;
+    color: white;
+    
+}
+.bb{
+    display: block;
+    width: 1000px;
+    height: 550px;
+    /* background-color: pink; */
+    padding: 8px;
+
+}
+.main{
+    width: 980px;
+    height: 550px;
+    background-color:  #121212;
+    border-radius: 8px;
+    margin-left: 5px;
+    position: relative;
+    overflow: hidden;
+   
+
+}
+.nav{
+    width: 975px;
+    height: 80px;
+    background-color: #1e1e1e;
+    position: fixed;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.navv{
+    /* background-color: red; */
+    height: 40px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top{
+    width: 98%;
+    height: 180px;
+    background-color: #121212;
+    border-radius: 5px;
+    position: absolute;
+    align-content: center;
+    
+}
+.top div{
+    padding-bottom: 20px;
+    margin-left: 30px;
+}
+.top div p{
+    padding-bottom: 20px;
+    margin-left: 18px;
+}
+.butt{
+    margin-top: 190px;
+    width: 98%;
+    height: 358px;
+    background-color: #121212;
+    border-radius: 3px;
+    position: absolute;
+    align-content: center;
+   
+
+}
+.sport{
+    width: 145px;
+    height: 40px;
+    margin-top: 25px;
+}
+.tap{
+    height: 49px;
+    /* background-color: white; */
+    color: black;
+    
+    width: 256px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+    cursor: pointer;
+    color: white;
+}
+.tapp{
+    height: 70px;
+    /* background-color: white; */
+    color: black;
+    overflow: auto;
+    width: 256px;
+    align-items: center ;
+    cursor: pointer;
+    border-radius: 9px;
+    margin-top: 20px;
+    color: white;
+}
+.tappp{
+    height: 200px;
+    /* background-color: red;  */
+    color: black;
+    overflow: auto;
+
+    width: 256px;
+    align-items: center ;
+    cursor: pointer;
+    margin-top: 20px;
+    color: white;
+} 
+.tappp div p{
+    margin-left: 15px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.progress{
+    right: 400px ;
+    cursor: pointer;
+    /* position: absolute; */
+}
+
+.angle{
+    display: flex;
+    position: relative;
+    width: 100px;
+    height: 30px;
+    /* background-color: yellowgreen; */
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.angle1{
+    /* margin-left: 680px; */
+    background-color: #0056b3;
+}
+.an{
+   
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    justify-content: center;
+    align-content: center;
+    width: 20px;
+    height: 20px;
+}
+.an i{
+    align-content: center;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+.signup-btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Transition effect for smooth color change */
+}
+
+.signup-btn:hover {
+    background-color: #888; /* Change to ash color on hover */
+}
+.signin-btn {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transition effect for smooth color change */
+}
+
+.signin-btn:hover {
+    background-color: #888; /* Change to ash color on hover */
+}
+.Slide{
+    background-color: #1e1e1e;
+    width: 975px;
+    height: 300px;
+    z-index: 99;
+    margin-top: 100px;
+    overflow: auto;
+}
+.headslide{
+/* background-color: red; */
+height: 40px;
+display: flex;
+padding: 10px;
+align-items: center;
+justify-content: space-between;
+color: white;
+cursor: pointer;
+}
+.headslide1{
+    /* background-color: red; */
+    height: 40px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    }
+.slidecon{
+background-color: #121212;
+height: 360px;
+display: flex;
+justify-content: space-around;
+padding: 5px;
+}
+.tile{
+    width: 200px;
+    height: 290px;
+    background-color: #181818;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition effect for color change */
+    cursor: pointer; /* Show pointer cursor on hover */
+    
+}
+.tile :hover{
+    background-color: #212121;
+}
+.tile-top{
+    width: 200px;
+    height: 200px;
+    background-color: #FFCC70;
+    border-top-right-radius: 8px ;
+    border-top-left-radius: 8px;
+    position: relative;
+}
+.tile-top iframe{
+    width: 200px;
+    height: 200px;
+    background-color: #FFCC70;
+    border-top-right-radius: 8px ;
+    border-top-left-radius: 8px;
+    position: relative;
+}
+.tile-but{
+    width: 200px;
+    height: 75px;
+    /* background-color: firebrick; */
+    border-bottom-left-radius: 8px ;
+    border-bottom-right-radius: 8px;
+    margin-top: 10px;
+    
+}
+/* Styles for the Sign Up Free button */
+.signup-free-btn {
+    background-color: white;
+    color: black; /* Text color */
+    padding: 10px 20px;
+    border: 1px solid #888; /* Border style */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition effect for color change */
+    cursor: pointer; /* Show pointer cursor on hover */
+    text-decoration: none;
+}
+
+.signup-free-btn:hover {
+    background-color:#0056b3; /* Ash color on hover */
+    color: white; /* Darker text color on hover */
+
+}
+.footer .signup-free-btn{
+    margin-right: 50px;
+}
+.create-playlist-btn {
+    background-color: white;
+    color: #333; /* Text color */
+    padding: 10px 20px;
+    border: 1px solid #888; /* Border style */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition effect for color change */
+    cursor: pointer; /* Show pointer cursor on hover */
+    margin-left: 14px;
+}
+
+.create-playlist-btn:hover {
+    background-color: #0056b3; /* Ash color on hover */
+    color: white; /* Darker text color on hover */
+}
+/* Styles for the Language button */
+.language-btn {
+    background-color: #007bff; /* Change this to the desired background color */
+    color: white; /* Text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transition effect for background color change */
+    cursor: pointer; /* Show pointer cursor on hover */
+    margin-left: 15px;
+  }
+  
+  .language-btn:hover {
+    background-color: #0056b3; /* Change to a darker shade on hover */
+  }
+  
+  /* Adjust the size and color of the icon */
+  .language-btn i {
+    margin-right: 5px; /* Adjust the space between icon and text */
+    font-size: 18px; /* Adjust the icon size */
+  }
+  .bop{
+    width: 200px;
+  
+    height: 150px;
+    margin-left: 20px;
+    /* background-color: white; */
+  }
+  .bop1{
+    width: 200px;
+    height: 120px;
+    margin-left: 20px;
+    /* background-color: white; */
+    display: flex;
+    font-size: 30px;
+    justify-content: space-around;
+  }
+  .bopp{
+    width: 200px;
+    height: 120px;
+    display: flex;
+    /* background-color: white; */
+    cursor: pointer;
+  }
+  .bop h5{
+    margin-bottom: 5px;
+    font-weight: 800;
+  }
+  .bop p{
+    margin-bottom: 1px;
+  }
+  
+  #playButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    border: none;
+    font-size: 36px;
+    cursor: pointer;
+  }
+  #playButton1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    border: none;
+    font-size: 36px;
+    cursor: pointer;
+  }
+  #playButton2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    border: none;
+    font-size: 36px;
+    cursor: pointer;
+  }
+
+  #playButton3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    border: none;
+    font-size: 36px;
+    cursor: pointer;
+  }
+
+.mainn{
+    width: 98%;
+    height: 98%;
+    overflow:hidden;
+   
+  /* background-color: #C850C0; */
+
+}
+.angle11{
+    display: flex;
+    position: relative;
+    width: 150px;
+    height: 30px;
+    /* background-color: yellowgreen; */
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.inn{
+    /* background-color: red; */
+    height: 585px;
+    width: 324px;
+   margin-left: 440px;
+   padding: 10px;
+   color: white;
+    
+}
+.inn h1{
+    font-size: 40px;
+  
+}
+.container1{
+    background-color: black;
+    /* padding: 20px; */
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.nav1{
+    
+    width: 96%;
+    height: 80px;
+    background-color: #1e1e1e;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    align-content: center;
+    margin-left: 25px;
+    
+}
+.navv1{
+    /* background-color: red; */
+    width: 94%;
+    height: 40px;
+       display: flex;
+    align-items: center;
+    /* background-color: pink; */
+    justify-content: space-between;
+    padding: 10px;
+
+}
+.input-email{
+    width: 320px;
+    height: 25px;
+    position: absolute;
+}
+  
+.header{
+    width: 324px;
+    height: 96px;
+    margin-bottom: 15px;
+}
+
+.headrr{
+width: 324px;
+/* height: 154px;
+background-color: pink; */
+position: relative;
+margin-top: 10px;
+}
+
+.email-panel{
+    width: 310px;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+.nextt{
+    width: 324px;
+    height: 48px;
+    background-color: #1fdf64;
+    padding: 5px 10px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.line_text{
+    display: flex;
+    width: 320px;
+    height: 300px;
+    /* background-color: pink; */
+    align-content: center;
+    margin-top: 20px;
+    position: relative;
+}
+.jj{
+    align-items: center;
+    padding: 10px 35px;
+    align-content: center;
+}
+.jj:hover{
+    background-color: #007bff;
+}
+.tiny{
+   
+    width: 20px;
+}
+.boxxx{
+    width: 300px;
+    height: 104px;
+    /* background-color: green; */
+    position: absolute;
+    padding: 10px;
+    
+}
+.goog{
+    width: 300px;
+    height: 48px;
+    background-color: white;
+    color: black;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    justify-content: space-around;
+    cursor: pointer;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+.boxxx :hover{
+    background-color: #0056b3;
+}
+.vvv{
+    width: 20px;
+    height: 20px;
+    color: black;
+}
+.boxstyle1{
+    width: 300px;
+    height: 20px;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+}
+.descript{
+    width: 300px;
+    height: 80px;
+    /* background-color: #1fdf64; */
+    text-align: center;
+    margin-top: 10px;
+}
+.container3{
+    width: 100%;
+    height: 100vh;
+     background-color: black;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+}
+.nav5{
+    width: 95%;
+    height: 100vh;
+    position: relative;
+    /* background-color: #1fdf64;  */
+    align-items: center;
+    padding: 10px;
+}
+.navv10{
+    width: 1200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #181818;
+    justify-content: space-between;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.login22{
+    width: 1200px;
+    height: 1500px;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+}
+.middlePan{
+    width: 734px;
+    height: 510px;
+    background-color: #181818;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.innn{
+    /* background-color: red; */
+    height: 585px;
+    width: 324px;
+    padding: 10px;
+    color: white;
+}
+.innn h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.goog1{
+    width: 300px;
+    height: 40px;
+    background-color: white;
+    color: #1e1e1e;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    justify-content: space-around;
+    cursor: pointer;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+.goog1:hover{
+    background-color: #007bff;
+    color: black;
+}
+.btn{
+    padding: 10px 24px;
+    align-content: center;
+    background-color: white;
+    border-radius: 7px;
+    margin-top: 15px;
+    margin-left: 120px;
+}
+#btnn:hover{
+    background-color: #007bff;
+    color: black;
+}

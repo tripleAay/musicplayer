@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <div class="flex justify-center h-screen items-center bg-indigo-600">
+        <div class="w-120 p-6 shadow-lg bg-white rounded-md">
+            <h1 class="font-bold cursor-pointer"> <i class="fa-solid fa-user mr-3"></i> Register Account</h1>
+            <hr class="mt-3">
+            <div class="mt-3">
+                <label for="First Name" class=" mb-2  text-base mr-7">First Name:</label>
+                <input type="text" id="firstName" placeholder="First Name" class="border w-50 px-2 py-1 focus:outline-none focus:ring-0 focus:border-grey-600 placeholder: enter firstname mb-3"><br>
+                <label for="First Name" class=" mb-2  text-base mr-7 ">Last Name:</label>
+                <input type="text" id="lastName" placeholder="Last Name" class="border w-50 px-2 py-1 focus:outline-none focus:ring-0 focus:border-grey-600 placeholder: enter firstname  mb-3"><br>
+                <label for="First Name" class=" mb-2  text-base mr-2 ">Email Address</label>
+                <input type="text" id="email" placeholder="Email" class="border w-fit px-2 py-1 focus:outline-none focus:ring-0 focus:border-grey-600 placeholder: enter firstname  mb-3"><br>
+                <label for="Password" class=" mb-2  text-base mr-3 ">Enter Password</label>
+                <input type="password" id="password" class="border w-fit px-2 py-1 focus:outline-none focus:ring-0 focus:border-grey-600 placeholder: enter firstname  mb-3"><br>
+                <label for="Password" class=" mb-2  text-base mr-1 ">Confirm Password</label>
+                <input type="password" id="confirmPassword" class="border w-fit px-2 py-1 focus:outline-none focus:ring-0 focus:border-grey-600 placeholder: enter firstname  mb-3"><br>
+                <div class="flex gap-6 mb-4">
+                    <input type="checkbox" id="checkBox">
+                    <p>Kindly agree to the company's policy</p>
+                </div>
+
+                <div class="flex justify-center items-center ">
+                    <button onclick="registerUser()" class="bg-green-950 text-white px-2 py-1  border-2 rounded-lg font-bold" > REGISTER </button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+<script>
+    let firstName = document.getElementById("firstName"); 
+    let lastName = document.getElementById("lastName"); 
+    let password = document.getElementById("password"); 
+    let confirmPassword = document.getElementById("confirmPassword"); 
+    let email = document.getElementById("email");
+    let checkbox = document.getElementById("checkBox");
+    let arr = JSON.parse(localStorage.getItem("Date")) || []; 
+
+    function registerUser(){
+        let data = {
+            ffname: firstName.value, 
+            llname: lastName.value, 
+            Email: email.value,
+            pssword: password.value, 
+        }
+
+        if(firstName.value == "" || lastName.value == "" || password.value == "" || email.value == " "){
+            alert("fields can not be empty; Enter Information");
+            return;
+        } else if(password.value !== confirmPassword.value){
+            alert("incorrect password; try again")
+        } else if(checkbox.checked != true){
+            alert("click checkbox to agree to terms")
+        } else {
+            arr.push(data);
+            localStorage.setItem("Data", JSON.stringify(arr))
+            window.location.href = "login.html"
+        }
+    }
+
+</script>

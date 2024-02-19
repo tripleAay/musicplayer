@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="NAIJA COPY.png">
+</head>
+
+<body>
+    <nav class="jo">
+        <img src="NAIJA COPY.png" alt="">
+        <h5>Wanna know what people say about us?</h5>
+        <!-- <a href="review-page.surge.sh"> -->
+           <a style="text-decoration: none;" href="./rev.html"><button>Learn More</button></a> 
+         </a>
+    </nav>
+    <div class="stream">
+        <h1>welcome!</h1>
+        <h2>Stream the latest music videos</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="feature-img">
+                    <h4 style="color: white; margin-bottom: 20px;">Kizz Daniel My-G (official video)</h4>
+                    <img src="10AE3BAB-F07D-4816-BAEF-1BDAB8DA08CA.png"
+                        alt="" width="100%">
+                    <img src="download__1_-removebg-preview.png" class="play-btn" onclick="playvideo('daniel.mp4')">
+                </div>
+            </div>
+            <div class="col">
+                <h1 style="color: white;">Most popular music Videos</h1>
+                <div class="small-img-row">
+
+                    <div class="small-img">
+                        <img src="download (3).jfif" alt="">
+                        <img src="download__1_-removebg-preview.png" class="play-btn" onclick="playvideo('tyla.mp4')">
+                    </div>
+                    <p>Tyla water ( Official video)</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="images.jfif" alt="">
+                        <img src="download__1_-removebg-preview.png" class="play-btn" onclick="playvideo('asake.mp4')">
+                    </div>
+                    <p>Asake lonely-at-the-top <br>( Official video)</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="download (5).jfif" alt="">
+                        <img src="download__1_-removebg-preview.png" class="play-btn" onclick="playvideo('rema.mp4')">
+                    </div>
+                    <p>Rema ft Selena Gomez Calm down <br>( Official video)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="video-player" id="videoplayer">
+        <video width="100%" controls autoplay id="myvideo">
+            <source src="metapreview.mp4" type="video/mp4">
+        </video>
+        <img src="download__2_-removebg-preview.png" alt="" class="close-btn" onclick="stopvideo()">
+    </div>
+
+
+    <script>
+        var videoplayer = document.getElementById("videoplayer");
+        var myvideo = document.getElementById("myvideo");
+        function stopvideo() {
+            videoplayer.style.display = "none"
+
+        }
+        function playvideo(file) {
+            myvideo.src = file;
+            videoplayer.style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

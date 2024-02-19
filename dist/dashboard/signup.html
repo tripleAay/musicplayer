@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./sporti.css">
+    <link rel="stylesheet" href="./sporty.jss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald&family=Poppins:wght@300&family=Roboto:wght@300&family=Suez+One&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body style="font-family: Plus Jakarta Sans', sans-serif;
+;">
+   
+    <div class="container1" > 
+        <!-- backgroud -->
+        <div class="mainn">
+            <div class="nav1">
+                <div class="navv1">
+                <div class="angle112">
+                    <p style="color: white;">Please; Sign up</p>
+                </div>
+                <div class="angle12">
+                    <a class="signin-btn" href="./home.html">Log in</a>
+                </div>
+                </div>
+            </div>
+
+            <div class="inn">
+                <div class="header">
+                    <h1>Sign up to start listening</h1>
+                </div>
+                
+                <div class="headrr">
+                    <label style="margin-bottom: 10px;" for="">Email</label> <br>
+                    <input class="email-panel " type="email" id="emailInput" placeholder="Enter your email">
+                    <a style="margin-bottom: 30px;" href="">Use a phone number instead</a><br><br>
+                    <a href="./home.html"><button class="jj">Next</button></a>
+                    
+                    <div class="line_text">
+
+                        <div class="boxxx">
+                            <div class="boxstyle1"></div>
+                                <div class="goog">
+                                <img class="vvv" src="./google-icon.svg" alt="">
+                                <a style="text-decoration: none;" href="https://accounts.google.com/v3/signin/identifier?hl=en-gb&ifkv=ASKXGp05vaNilByrFYpenFM09geOp1tX7MPZr6SYRuAX2JIDu3uduTGQUnVHNg7NH1LoxVHWEb7yEA&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1661982370%3A1702539768306935&theme=glif"><p>Sign up with google</p></a>
+                            </div>
+
+                            <div class="goog">
+                                <img class="vvv" src="./facebook-round-color-icon.svg" alt="">
+                                <a style="text-decoration: none;" href="https://web.facebook.com/?_rdc=1&_rdr"><p>Sign up with Facebook</p></a>
+                            </div>
+                            <div class="boxstyle1"></div>
+                            <p>Already have an account? <a style="text-decoration: none;" href="">Login in here</a></p>
+                            <div class="descript">
+                                <p>This site is protected by reCAPTCHA and the Google
+                                    Privacy Policy and Terms of Service apply.</p>
+                            </div>
+
+                        </div>
+                        
+                        <div><div>
+                      
+                    </div>
+                   
+                </div>
+            </div>
+               
+                
+            </div>
+        </div>
+        
+       
+       
+         
+
+    </div>
+</body>
+</html>
+<script>
+document.getElementById('emailInput').addEventListener('input', function() {
+  const email = this.value.trim();
+  const errorMessage = document.getElementById('errorMessage');
+  const alertIcon = document.querySelector('.alert-icon');
+  const errorText = document.getElementById('errorText');
+
+  if (email !== '' && !email.endsWith('.com')) {
+    errorMessage.style.visibility = 'visible';
+    alertIcon.classList.remove('hidden');
+    errorText.classList.remove('hidden');
+  } else {
+    errorMessage.style.visibility = 'hidden';
+    alertIcon.classList.add('hidden');
+    errorText.classList.add('hidden');
+  }
+});
+
+</script>

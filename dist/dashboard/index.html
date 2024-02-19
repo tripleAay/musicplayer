@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/81541a646f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./sporti.css">
+    <link rel="stylesheet" href="./sporty.jss">
+</head>
+<style>
+    @media (max-width:1024px ) {
+        .bb{
+            width: 620px;
+        }
+        .slidecon{
+            width: 620px;
+        }
+        .tile-top{
+            width: 100px;
+            height: 100px;
+        }
+        .footer{
+            width: 900px;
+        }
+        .slide{
+            width: 620px;
+        }
+        .nav{
+            width: 620px;
+        }
+        .main{
+            width: 620px;
+        }
+        .top{
+            width: 296px;
+        }
+    }
+    @media (max-width:1258px ){
+        .navv{
+            width: 975px;
+        }
+        .aa{
+            width: 296px;
+        }
+
+    }
+    @media (max-width: 1222px){
+        
+    }
+</style>
+<body>
+    <div class="container" >
+        <div class="container1">
+            <div class="aa">
+                <div class="top">
+                    <div><img class="sport" src="./NAIJA.png" alt=""></div>
+                    <div style="display: flex; cursor: pointer;" ><i style="color: white; font-size: 20px;" class="fa-solid fa-house"></i>
+                        <p>Home</p></div>
+                    <div style="display: flex; cursor: pointer;"><i style="font-size: 20px; display: flex; color: white;" class="fa-solid fa-magnifying-glass"></i>
+                        <p>Search</p></div>
+                </div>
+                <div class="butt">
+                    <div class="tap">
+                        <div><i class="fa-solid fa-music"></i></div> 
+                        <div>Your Library</div> 
+                        <div>
+                            <input  id="uploadSongA"  style="display: none;" type="file">
+                            <i  onclick="uploadSong()" style="cursor: pointer;" class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="tapp">
+                        <h4 style="margin-bottom: 8px; margin-left: 14px;">Create your first playlist</h4>
+                        <p style="margin-bottom: 9px; margin-left: 14px;">Its easy, it will help you</p>
+                        <button class="create-playlist-btn">Create Playlist</button>
+                    </div>
+                    <div class="tappp">
+                        <div style="display: flex; margin-top: 10px;">
+                            <p>Legal</p>
+                            <p>privacy Center</p>
+                            <p>Privacy Policy</p></div>
+                        <div>
+                            <p>Cookie Settings</p>
+                            <p>About Ads</p>
+                        </div>
+                        <div>
+                            <p>Accessibility</p>
+                        </div>
+                        <div>
+                            <p>Cookies</p>
+                        </div>
+                        <button class="language-btn">
+                            <i class="fas fa-globe"></i> Language
+                          </button>
+                    </div>
+                </div>
+            </div>
+            <div class="bb">
+                <div class="main">
+                    <div class="nav">
+                        
+                        <div  class="navv">
+                        <div  class="angle">
+                            <div class="an" ><i class="fa-solid fa-angle-left"></i></div>
+                            <div class="an"><i class="fa-solid fa-angle-right"></i></div>
+                        </div>
+                        <!-- work retouch area for music -->
+                        <div style="width: 280px;">
+                            <audio id="song">
+                                <source src="./spotifydown.com - Entertain Me.mp3" type="audio/mpeg">
+                            </audio>
+                           
+                        </div>
+                        <div style="gap: 10px; display: flex; align-items: center; justify-content: space-between; width: 100px;">
+                            <i style="font-size: 20px; color: white; cursor: pointer;" class="fa-solid fa-backward"></i>
+                            <i onclick="playPauseM()" id="playPause" style="font-size: 25px; color: white; cursor: pointer;" class="fa-solid fa-play"></i>
+                            <i style="font-size: 20px; color: white; cursor: pointer;" class="fa-solid fa-forward"></i>
+                        </div>
+                        <div>
+                            <input id="progress" class="progress" style="width: 280px;" type="range">
+                        </div>
+                        <div  class="angle1">
+                            <!-- <a class="signup-btn" href="./signup.html">Sign Up</a>
+                            <a class="signin-btn" href="./login.html">Sign In</a> -->
+                        </div> 
+                     </div>
+                    </div>
+                    <div class="Slide">
+                       <div class="headslide">
+                        <div><h2>Holiday Mix</h2></div>
+                        
+                        <div><a href="">Show all</a></div>
+                       </div>
+                       <div class="slidecon">
+                        <div class="tile">
+                            <div class="tile-top">
+                                <img style="height: 200px; width: 200px;" class="" src="./a.jpg" alt="">
+                                <button id="playButton">&#9658;</button></div>
+                                <audio id="audioPlayer" src="./spotifydown.com - Id.Me.mp3"></audio>
+                                <script src="sporty.jss"></script>
+                            <div class="tile-but">
+                                <h3>Today's Top Hit</h3>
+                                <p style="margin-top: 5px;">Tate Macre is on top of the latest 50</p>
+                            </div>
+                        </div>
+                        <div class="tile">
+                            <div class="tile-top">
+                                <img style="height: 200px; width: 200px;" src="./b.jpg" alt="">
+                                <button id="playButton1">&#9658;</button></div>
+                                <audio id="audioPlayer1" src="./spotifydown.com - Afrobeat Christmas.mp3"></audio>
+                                <script src="sporty.jss"></script>
+                                
+                           
+                            <div class="tile-but">
+                                <h3>Christmas Hit</h3>
+                                <p style="margin-top: 5px;">The biggest Christmas song of all time</p>
+                            </div>
+                        </div>
+                        
+                        <div class="tile">
+                            <div class="tile-top"><img style="height: 200px; width: 200px;"  src="./d.jpg" alt="">
+                                <button id="playButton2">&#9658;</button></div>
+                                <audio id="audioPlayer2" src="./spotifydown.com - FEEL.mp3"></audio>
+                                    <script src="sporty.jss"></script>
+                            <div class="tile-but">
+                                <h3>Chillhop</h3>
+                                <p style="margin-top: 5px;">Blissed out beat and head nodding grooves</p>
+                            </div>
+                        </div>
+                        <div class="tile">
+                            <div class="tile-top"><img style="height: 200px; width: 200px;"  src="./dd.jpeg" alt="">
+                                <button id="playButton3">&#9658;</button>
+                            </div>
+                            <audio id="audioPlayer3" src="./spotifydown.com - Entertain Me.mp3"></audio>
+                                    <script src="sporty.jss"></script>
+                            <div class="tile-but">
+                                <h3>Calming Accoustic</h3>
+                                <p style="margin-top: 5px;">Keep calm with instrumental acoustic tracks</p>
+                            </div>
+                        </div>
+                        
+                       </div>
+                       <div class="headslide1">
+                        <div><h2>Sleep</h2></div>
+                       
+                       </div>
+                       <div class="slidecon">
+                        <div class="tile">
+                            <div class="tile-top"><iframe src="./videooo.mp4" frameborder="0"></iframe></div>
+                            <div class="tile-but">
+                                <h3>Sleep</h3>
+                                <p style="margin-top: 5px;">Gentle ambient piano to help you fall asleep</p>
+                            </div>
+                        </div>
+                        <div class="tile">
+                            <div class="tile-top"><iframe src="./Burna Boy - City Boys [Official Music Video].mp4" frameborder="0"></iframe></div>
+                            <div class="tile-but">
+                                <h3>Day Dreamer</h3>
+                                <p style="margin-top: 5px;">Drift away with enthrailing instrumentals.</p>
+                            </div>
+                        </div>
+                        <div class="tile">
+                            <div class="tile-top"><iframe src="./Burna Boy - City Boys [Official Music Video].mp4" frameborder="0"></iframe></div>
+                            <div class="tile-but">
+                                <h3></h3>
+                                <p style="margin-top: 5px;"></p>
+                            </div>
+                        </div>
+                        <div class="tile">
+                            <div class="tile-top"><iframe src="./Burna Boy - City Boys [Official Music Video].mp4" frameborder="0"></iframe></div>
+                            <div class="tile-but">
+                                <h3></h3>
+                                <p style="margin-top: 5px;"></p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="bopp" style="color: white; height: 150px; width: 100%; padding-top: 10px;">
+                <div class="bop">
+                    <h4>Company</h4>
+                    <p>About</p>
+                    <p>Job</p>
+                    <p>For the records</p>
+                </div>
+               
+                <div class="bop">
+                    <h4>Communities</h4>
+                    <p>For Artists</p>
+                    <p>Developers</p>
+                    <p>Advertising</p>
+                    <p>Investors</p>
+                    <p>Vendors</p>
+                </div>
+
+                <div class="bop">
+                    <h4>Useful links</h4>
+                    <p>Support</p>
+                </div>
+
+                <div class="bop1">
+                    <div><i class="fa-brands fa-instagram"></i></div>
+                    <div><i class="fa-brands fa-twitter"></i></div>
+                    <div><i class="fa-brands fa-facebook"></i></div>
+                  
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer" >
+            <div><p>Preview songs <br>Signup to get unlimited songs and podcasts with occassional. No credit card needed</p></div>
+            <div><button class="signup-free-btn">Sign Up Free</button></div>
+        </div>
+    </div>
+    
+
+    </div>
+</body>
+</html>
+<script>
+    let playPause = document.getElementById("playPause");
+    let song = document.getElementById("song");
+    let progress = document.getElementById("progress");
+    let uploadSongA = document.getElementById("uploadSongA");
+
+    uploadSong.addEventListener("change", uploadSong);
+
+    function uploadSongg(event){
+        const files = event.target.files; 
+        for (const file of files) {
+        const listItem = document.createElement('li');
+        listItem.textContent = file.name;
+        listItem.addEventListener('click', () => playSong(file));
+        playlist.appendChild(listItem);
+      }
+
+      // Automatically play the first song
+      if (files.length > 0) {
+        playSong(files[0]);
+      }
+    }
+
+    song.onloadeddata  = function(){
+        progress.max = song.duration; 
+        progress.value = song.currentTime;
+    }
+
+    function playPauseM(file){
+        if(playPause.classList.contains("fa-pause")){
+            song.pause();
+            playPause.classList.remove("fa-pause");
+            playPause.classList.add("fa-play")
+        }
+        else {
+            song.play();
+            playPause.classList.remove("fa-play")
+            playPause.classList.add("fa-pause");
+           
+        }
+    }
+
+    if(song.play()){
+        setInterval(() => {
+            progress.value = song.currentTime;
+        }, 500);
+    }
+
+    progress.onchange = function () {
+        song.play();
+        song.currentTime = progress.value
+        playPause.classList.remove("fa-play")
+            playPause.classList.add("fa-pause");
+    }
+
+
+
+// JAVASCRIPT CODE FOR MR. DANIEL MODIFICATION PROJECT// 
+// function uploadSong(){
+//     let ss = document.getElementById("uploadSong").click();
+//     let music = ss.value; 
+//     localStorage.setItem("musicFile", "music");
+   
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// BELOW ARE THE JAVASCRIPT FOR THE EXISTING PROJECT// 
+    const playButton = document.getElementById('playButton');
+const audioPlayer = document.getElementById('audioPlayer');
+
+playButton.addEventListener('click', function() {
+  if (audioPlayer.paused) {
+    audioPlayer.play();
+    playButton.innerHTML = '&#9616;&#9616;'; // Show pause icon
+  } else {
+    audioPlayer.pause();
+    playButton.innerHTML = '&#9658;'; // Show play icon
+  }
+});
+
+const playButton1 = document.getElementById('playButton1');
+const audioPlayer1 = document.getElementById('audioPlayer1');
+
+playButton1.addEventListener('click', function() {
+  if (audioPlayer1.paused) {
+    audioPlayer1.play();
+    playButton1.innerHTML = '&#9616;&#9616;'; // Show pause icon
+  } else {
+    audioPlayer1.pause();
+    playButton1.innerHTML = '&#9658;'; // Show play icon
+  }
+});
+
+const playButton2 = document.getElementById('playButton2');
+const audioPlayer2 = document.getElementById('audioPlayer2');
+
+playButton2.addEventListener('click', function() {
+  if (audioPlayer2.paused) {
+    audioPlayer2.play();
+    playButton2.innerHTML = '&#9616;&#9616;'; // Show pause icon
+  } else {
+    audioPlayer2.pause();
+    playButton2.innerHTML = '&#9658;'; // Show play icon
+  }
+});
+
+const playButton3 = document.getElementById('playButton3');
+const audioPlayer3 = document.getElementById('audioPlayer3');
+
+playButton3.addEventListener('click', function() {
+  if (audioPlayer3.paused) {
+    audioPlayer3.play();
+    playButton3.innerHTML = '&#9616;&#9616;'; // Show pause icon
+  } else {
+    audioPlayer3.pause();
+    playButton3.innerHTML = '&#9658;'; // Show play icon
+  }
+});
+
+
+</script>

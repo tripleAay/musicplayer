@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <div class="flex justify-center h-screen items-center bg-indigo-600">
+        <div class="w-120 p-6 shadow-lg bg-white rounded-md">
+            <h1 class="font-bold cursor-pointer"> <i class="fa-solid fa-user mr-3"></i> Log     In Account</h1>
+            <hr class="mt-3">
+            <div class="mt-3">
+               
+                <label for="First Name" class=" mb-2  text-base mr-2 ">Email Address</label>
+                <input type="text" id="email_" placeholder="Email" class="border w-fit px-2 py-1 focus:outline-none focus:ring-0 focus:border-grey-600 placeholder: enter firstname  mb-3"><br>
+                <label for="Password" class=" mb-2  text-base mr-3 ">Enter Password</label>
+                <input type="password" id="password_" class="border w-fit px-2 py-1 focus:outline-none focus:ring-0 focus:border-grey-600 placeholder: enter firstname  mb-3"><br>
+                
+
+                <div class="flex justify-center items-center ">
+                    <button onclick="signinUser()" class="bg-green-950 text-white px-2 py-1  border-2 rounded-lg font-bold" > SIGN IN </button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+<script>
+let email_ = document.getElementById("email_"); 
+let password_ = document.getElementById("password_"); 
+let data_ = JSON.parse(localStorage.getItem("Data"));
+
+function signinUser(){
+    // ev.preventDefault();
+    let attemptingUser = data_.find((ei)=> ei.Email == email_.value && ei.pssword == password_.value ); 
+    console.log(attemptingUser);
+    if(attemptingUser === undefined){
+        alert("Invalid LogIn");
+    }
+        else {
+            localStorage.setItem("loggedInUser", JSON.stringify(attemptingUser))
+            alert("login Successful")
+            window.location.href = "./dashboard/index.html"
+        }
+}
+
+
+    
+
+</script>
