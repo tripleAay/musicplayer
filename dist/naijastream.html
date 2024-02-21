@@ -64,15 +64,16 @@
                     <div class="tap">
                         <div><i class="fa-solid fa-music"></i></div> 
                         <div>Your Library</div> 
-                        <div>
-                            <input  id="uploadSongA"  style="display: none;" type="file">
-                            <i  onchange="uploadSong()" style="cursor: pointer;" class="fa-solid fa-plus"></i>
+                        <div style="position: relative;">
+                            <input onchange="uploadSong()"  id="uploadSongA"  style="width: 10px; opacity: 0; margin-right: -11px;" type="file" placeholder="+">
+                            <i style="cursor: pointer; margin-left: -6px; z-index: -1;" class="fa-solid fa-plus"></i>
                         </div>
                     </div>
                     <div class="tapp">
                         <h4 style="margin-bottom: 8px; margin-left: 14px;">Create your first playlist</h4>
                         <p style="margin-bottom: 9px; margin-left: 14px;">Its easy, it will help you</p>
                         <button class="create-playlist-btn">Create Playlist</button>
+                        <div id="dispAllSongs"></div>
                     </div>
                     <div class="tappp">
                         <div style="display: flex; margin-top: 10px;">
@@ -266,12 +267,47 @@
     let progress = document.getElementById("progress");
     let uploadSongA = document.getElementById("uploadSongA");
     let outt = document.getElementById("outt")
-
+    let musicArr = JSON.parse(localStorage.getItem("songs")) || []
+    let dispAllSongs = document.getElementById("dispAllSongs")
     // uploadSongA.addEventListener("change", uploadSong);
 
     function uploadSong(event){
-        const fileInput = uploadSongA.event.target;
-            
+        // const fileInput = uploadSongA.event.target;
+        let file = uploadSongA.files[0]
+        console.log(file);
+        let reader = new FileReader();
+        reader.addEventListener("load", (e)=>{
+            let res = e.target.result;
+            let musicInfo = {
+                name: file.name,
+                url: res
+            }
+            musicArr.push(musicInfo)
+            // song.src = res;
+            // song.play()
+            // console.log(musicArr);
+            localStorage.setItem("songs", JSON.stringify(musicArr))
+            loadSongs()
+        })
+        if(file){
+            reader.readAsDataURL(file)
+        }
+    }
+
+    function loadSongs(){
+        let songs = JSON.parse(localStorage.getItem("songs"))
+        songs.forEach(element => {
+            dispAllSongs.innerHTML += `
+                <div onclick="playSongs('${element.url}')">${element.name}</div>
+            `
+        });
+    }
+    loadSongs()
+
+    function playSongs(url){
+        song.src = url;
+        song.play()
+        playPauseM()
     }
 
     song.onloadeddata  = function(){
@@ -280,6 +316,7 @@
     }
 
     function playPauseM(file){
+        console.log("oiuytfg");
         if(playPause.classList.contains("fa-pause")){
             song.pause();
             playPause.classList.remove("fa-pause");
